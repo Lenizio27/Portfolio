@@ -1,6 +1,28 @@
 @import "tailwindcss";
 
-#root {
+/* Definindo a paleta de cores */
+@theme{
+  --color-b0: #00001b;
+  --color-b1: #0B1A3F;
+  --color-b2: #122A6B;
+  --color-b3: #1A3B9A;
+  --color-b4: #2A4FCC;
+  --color-b5: #3D6AE6;
+
+  --color-p0: #14051f;
+  --color-p1: #2A0B3F;
+  --color-p2: #3A1271;
+  --color-p3: #4B1A99;
+  --color-p4: #632AC6;
+  --color-p5: #7A3DEE;
+}
+
+body{
+  background-color: #00001b;
   margin: 0 ;
   padding: 0px;
+}
+
+.veloz{
+  color: var(--color-b5);
 }
