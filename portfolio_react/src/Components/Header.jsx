@@ -5,23 +5,32 @@ import { Button } from 'primereact/button';
 const Header = () => {
     return ( 
         <>
-            <header>
-                <div className="flex align-items-center justify-around">
+            <header className="border-b border-b1 m-auto">
+                <div className="flex align-items-center justify-around h-[80px] max-w-[1280px] m-auto">
                     {/*Logo*/}
                     <div>
-                        <img src={Logo} alt="" style={{width: '100px'}}/>
+                        <img src={Logo} alt="" style={{width: '80px'}}/>
                     </div>
                     {/*Navegation*/}
-                    <nav className="bg-primary">
-                        <ul className="flex gap-3">
+                    <nav className="">
+                        <ul className="flex justify-around w-full gap-7">
                             <li>
-                                <Link to="/" className="text-b5 hover:text-p5 duration-1000">Home</Link>
+                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Sobre</Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Skils</Link>
+                            </li>
+                            <li>
+                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Projetos</Link>
                             </li>
                         </ul>
                     </nav>
                     {/* Button */}
                     <div>
-                        <Button label="Fale Comigo" className="bg-b5 text-p0 p-1.5 rounded-md"/>
+                        <Button label="Fale Comigo" className="bg-none text-b5 border border-b5 p-1.5 rounded-md text-[14px]"/>
                     </div>
                 </div>
             </header>

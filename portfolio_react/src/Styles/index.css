@@ -2,6 +2,8 @@
 
 /* Definindo a paleta de cores */
 @theme{
+  --color-w1: #fff;
+
   --color-b0: #00001b;
   --color-b1: #0B1A3F;
   --color-b2: #122A6B;
