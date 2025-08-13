@@ -1,15 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layouts from "../Layouts/Layouts";
+import Home from "../Pages/Home";
+
 const Paths = () => {
-    return ( 
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Layouts/>}></Route>
-                </Routes>
-            </BrowserRouter>
-        </>
-     );
-}
- 
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layouts />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+};
+
 export default Paths;

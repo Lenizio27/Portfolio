@@ -11,11 +11,11 @@ const Header = () => {
             className="border-b border-b1 m-auto"
             >
                 <div 
-                className="flex align-items-center justify-around h-[80px] max-w-[1280px] m-auto max-md:justify-between max-md:px-7"
+                className="flex align-items-center justify-between h-[80px] max-w-[1280px] m-auto max-md:justify-between max-md:px-7 px-3"
                 >
                     {/*Logo*/}
                     <div>
-                        <img src={Logo} alt="" style={{width: '80px'}}/>
+                        <img src={Logo} alt="" style={{width: '70px'}}/>
                     </div>
                     {/*Navegation*/}
                     <nav className="hidden md:flex">
@@ -49,7 +49,7 @@ const Header = () => {
                     <div>
                         <Button 
                             label="Fale Comigo" 
-                            className="bg-none text-b5 border border-b5 p-1.5 rounded-md text-[14px] hidden md:flex"
+                            className="bg-none text-b5 border border-b5 p-1.5 rounded-md text-[14px] hidden md:flex hover:bg-b5 hover:text-w1"
                         />
                         <button
                         className="md:hidden text-w1 w-3"
