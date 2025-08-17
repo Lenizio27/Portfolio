@@ -23,6 +23,7 @@ body{
   background-color: #00001b;
   margin: 0 ;
   padding: 0px;
+  font-family:  monospace;
 }
 
 @keyframes sweep-x{

@@ -11,7 +11,7 @@ const Header = () => {
             className="border-b border-b1 m-auto"
             >
                 <div 
-                className="flex align-items-center justify-between h-[80px] max-w-[1280px] m-auto max-md:justify-between max-md:px-7 px-3"
+                className="flex align-items-center justify-between h-[80px] max-w-[1080px] m-auto max-md:justify-between max-md:px-7 px-3"
                 >
                     {/*Logo*/}
                     <div>
@@ -21,13 +21,13 @@ const Header = () => {
                     <nav className="hidden md:flex">
                         <ul className="flex justify-around w-full gap-7">
                             <li>
-                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Home</Link>
+                                <Link to="/" className="text-w1 hover:text-b5 duration-700">início</Link>
                             </li>
                             <li>
                                 <Link to="/" className="text-w1 hover:text-b5 duration-700">Sobre</Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Skils</Link>
+                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Habilidades</Link>
                             </li>
                             <li>
                                 <Link to="/" className="text-w1 hover:text-b5 duration-700">Projetos</Link>
@@ -38,9 +38,9 @@ const Header = () => {
                         <nav 
                             className="absolute top-[80px] left-0 w-full bg-[#0a0a23] flex flex-col items-center gap-6 py-6 md:hidden"
                         >
-                            <Link to="/" className="text-white">Home</Link>
+                            <Link to="/" className="text-white">início</Link>
                             <Link to="/sobre" className="text-white">Sobre</Link>
-                            <Link to="/skills" className="text-white">Skills</Link>
+                            <Link to="/skills" className="text-white">Habilidades</Link>
                             <Link to="/projetos" className="text-white">Projetos</Link>
                              <Button label="Fale Comigo" className="bg-none text-b5 border border-b5 p-1.5 rounded-md text-[14px]"/>
                         </nav>
