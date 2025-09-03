@@ -36,7 +36,8 @@ const Header = () => {
                     </nav>
                     {menuOpen && (
                         <nav 
-                            className="absolute top-[80px] left-0 w-full bg-[#0a0a23] flex flex-col items-center gap-6 py-6 md:hidden"
+                            className="absolute top-[80px] left-0 w-full h-[90vh] bg-[#0a0a23] flex flex-col items-center gap-6 py-6 md:hidden
+                            justify-content-center z-10"
                         >
                             <Link to="/" className="text-white">início</Link>
                             <Link to="/sobre" className="text-white">Sobre</Link>
@@ -55,7 +56,9 @@ const Header = () => {
                         className="md:hidden text-w1 w-3"
                         onClick={() => setMenuOpen(!menuOpen)}
                         >
-                            <i className={menuOpen ? "pi pi-times" : "pi pi-bars"}>
+                            <i 
+                            className={menuOpen ? "pi pi-times" : "pi pi-bars"
+                            }>
                             </i>
                         </button>
                     </div>
