@@ -3,7 +3,8 @@ import Foto from '../assets/Images/Perfil_Profissional.png'
 const Hero = () => {
     return ( 
         <>
-            <section className="text-w1 max-w-[1080px] m-auto p-3 flex justify-between max-md:flex-col">
+            <section className="text-w1 max-w-[1080px] m-auto p-3 flex justify-between max-md:flex-col ">
+                {/* Descrição Dev */}
                 <div className="max-md:m-auto md:w-6 my-auto">
                     <h1 className="text-[30px]">DESENVOLVEDOR <br />FRONT-END</h1>
                     <h2 className="text-[20px] py-1">
@@ -13,7 +14,8 @@ const Hero = () => {
                         Sou um desenvolvedor front-end apaixonado por criar experiências web bonitas e responsivas com tecnologias modernas, sempre buscando aprender novas ferramentas e expandir meus conhecimentos para áreas como back-end e mobile.
                     </p>
                 </div>
-                <div className="flex justify-center align-items-center max-md:w-auto md:w-6 max-md:my-2" >
+                {/* Foto Perfil */}
+                <div className="flex justify-end align-items-center max-md:w-auto md:w-6 max-md:my-2 max-md:justify-center" >
                     <img 
                     src={Foto} 
                     alt="foto-perfil" 

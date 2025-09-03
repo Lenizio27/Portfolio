@@ -63,3 +63,8 @@ body{
     filter: drop-shadow(0px 0px 5px var(--color-b5));
   }
 }
+
+/*  */
+.StyleGrow{
+  flex: 6 6 200px;
+}

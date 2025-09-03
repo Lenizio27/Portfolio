@@ -7,8 +7,9 @@ const Sobre = () => {
                         <h2 className="text-[30px] font-semibold">SOBRE <span className="text-p5">MIM</span></h2>
                         <p>Um pouco sobre minha jornada e experiências</p>
                     </div>
-                    <article className="flex">
-                        <div className="w-6 p-3">
+                    <article className="flex max-md:flex-col">
+                        {/* Jornada */}
+                        <div className="StyleGrow p-3 md-flex">
                             <h3 className="text-[20px] text-p5">Minha Jornada</h3>
                             <p>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum doloribus vel facere, et non minus inventore nostrum! Ullam, ad ab repellendus animi repellat illum! Voluptatum possimus laudantium labore debitis harum.
@@ -20,24 +21,25 @@ const Sobre = () => {
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum soluta explicabo, mollitia quae libero fugit tempore odio perspiciatis aperiam! Eum blanditiis minus earum ea non molestiae a tenetur corporis tempore.
                             </p>
                         </div>
-                        <div className="w-6 p-3">
+                        {/* Experiências */}
+                        <div className="StyleGrow p-3 ">
                             <h3 className="text-[20px] text-p5">Experiência</h3>
-                            <div className="flex flex-column justify-around items-center">
-                                <div className="w-4">
+                            <div className="flex flex-column justify-evenly items-center w-full h-full">
+                                <div className="bg-p1 w-full p-2 rounded-md">
                                     <h4>Projeto Drip-Store</h4>
                                     <h5>Geração Tech</h5>
                                     <p>Projeto Front-End</p>
                                 </div>
-                                <div className="w-4">
+                                <div className="bg-p1 BoxEx w-full p-2 rounded-md">
                                     <h4>Projeto Drip-Store</h4>
                                     <h5>Geração Tech</h5>
                                     <p>Projeto Front-End</p>
                                 </div>
-                                <div className="w-4">
+                                <div className="bg-p1 BoxEx w-full p-2 rounded-md">
                                     <h4>Projeto Drip-Store</h4>
                                     <h5>Geração Tech</h5>
                                     <p>Projeto Front-End</p>
-                            </div>
+                                </div>
                             </div>
                         </div>
                     </article>
