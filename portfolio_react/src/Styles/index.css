@@ -3,6 +3,7 @@
 /* Definindo a paleta de cores */
 @theme{
   --color-w1: #fff;
+  --color-b6: #00001bcf;
 
   --color-b0: #00001b;
   --color-b1: #0B1A3F;
@@ -64,7 +65,26 @@ body{
   }
 }
 
-/*  */
+/* Sobre */
 .StyleGrow{
   flex: 6 6 200px;
+}
+
+.xpBox{
+}
+.xpBox:hover{
+  animation: animaXpBox .6s ease-in-out ;
+}
+
+@keyframes animaXpBox{
+   0%{
+    filter: drop-shadow(0px 0px 5px var(--color-b5));
+  }
+  20%{
+    filter: drop-shadow(0px 10px 20px var(--color-p5));
+    transform: scaleY(.9);
+  }
+  40%{
+    filter: drop-shadow(-10px 0px 20px var(--color-b5));
+  }
 }

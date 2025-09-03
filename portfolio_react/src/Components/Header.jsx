@@ -8,10 +8,10 @@ const Header = () => {
     return ( 
         <>
             <header 
-            className="border-b border-b1 m-auto"
+            className="border-b border-b1 m-auto fixed flex w-full z-20 bg-b6 top-0"
             >
                 <div 
-                className="flex align-items-center justify-between h-[80px] max-w-[1080px] m-auto max-md:justify-between max-md:px-7 px-3"
+                className="flex align-items-center justify-between h-[80px] max-w-[1080px] m-auto max-md:justify-between max-md:px-7 px-3 w-full"
                 >
                     {/*Logo*/}
                     <div>
@@ -37,7 +37,7 @@ const Header = () => {
                     {menuOpen && (
                         <nav 
                             className="absolute top-[80px] left-0 w-full h-[90vh] bg-[#0a0a23] flex flex-col items-center gap-6 py-6 md:hidden
-                            justify-content-center z-10 max-md:fixed"
+                            justify-content-center z-10"
                         >
                             <Link to="/" className="text-white">início</Link>
                             <Link to="/sobre" className="text-white">Sobre</Link>

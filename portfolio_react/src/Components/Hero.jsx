@@ -3,7 +3,7 @@ import Foto from '../assets/Images/Perfil_Profissional.png'
 const Hero = () => {
     return ( 
         <>
-            <section className="text-w1 max-w-[1080px] m-auto p-3 flex justify-between max-md:flex-col ">
+            <section className="text-w1 max-w-[1080px] mx-auto p-3 flex justify-between max-md:flex-col my-20 min-h-[90vh]">
                 {/* Descrição Dev */}
                 <div className="max-md:m-auto md:w-6 my-auto">
                     <h1 className="text-[30px]">DESENVOLVEDOR <br />FRONT-END</h1>
