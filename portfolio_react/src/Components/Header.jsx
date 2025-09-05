@@ -1,4 +1,4 @@
-import Logo from "/src/assets/Images/LogoPortifolio.png"
+import Logo from "/src/assets/Images/LogoPortfolio.png"
 import { Link } from 'react-router-dom';
 import { Button } from 'primereact/button';
 import { useState } from "react";

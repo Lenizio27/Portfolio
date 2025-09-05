@@ -1,16 +1,20 @@
 import Hero from "../Components/Hero";
 import Sobre from "../Components/Sobre";
+import Habilidades from "../Components/Habilidades";
 Sobre
 const Home = () => {
     return ( 
         <>
             <main>
-                <div>
+                <section id="Hero">
                     <Hero/>
-                </div> 
-                <div>
+                </section> 
+                <section id="Sobre">
                     <Sobre/>
-                </div>
+                </section>
+                <section id="Habilidades">
+                    <Habilidades/>
+                </section>
             </main>
         </>
      );
