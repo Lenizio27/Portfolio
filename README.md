@@ -9,8 +9,12 @@ Portfólio pessoal de Lenizio Nascimento
 
 ## Tecnologias
 
--HTML5
--CSS3
--REACT
--TAILWINDCSS
--JAVASCRIP
+- HTML5
+- CSS3
+- REACT
+- TAILWINDCSS
+- JAVASCRIP
+
+## Autor
+
+**Lenízio Nascimento**
