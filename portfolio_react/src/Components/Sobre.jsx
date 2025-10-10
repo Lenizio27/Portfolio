@@ -1,7 +1,7 @@
 const Sobre = () => {
     return ( 
         <>
-            <section className="text-w1">
+            <section className="text-w1 py-5">
                 <div className="max-w-[1080px] m-auto">
                     <div className=" flex flex-col align-items-center justify-center">
                         <h2 className="text-[30px] font-semibold">SOBRE <span className="text-p5">MIM</span></h2>
