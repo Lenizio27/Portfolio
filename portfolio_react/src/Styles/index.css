@@ -60,8 +60,7 @@ body{
   flex: 6 6 200px;
 }
 
-.xpBox{
-}
+
 .xpBox:hover{
   animation: animaXpBox .6s ease-in-out ;
 }
@@ -78,3 +77,4 @@ body{
     filter: drop-shadow(-10px 0px 20px var(--color-b3));
   }
 }
+

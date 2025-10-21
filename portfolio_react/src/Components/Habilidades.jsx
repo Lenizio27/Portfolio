@@ -1,4 +1,4 @@
-import CardService from "./CardService";
+import {CardService} from "./Cards";
 
 const Habilidades = () => {
     const Cards = [
@@ -30,11 +30,15 @@ const Habilidades = () => {
     ];
     return ( 
         <>
-            <section className="text-w1 w-full bg-b1 p-3">
-                <div className="max-w-[1080px] m-auto">
+            <section className="text-w1 w-full bg-b1">
+                <div className="max-w-[1080px] m-auto p-3">
                     <div className=" m-auto p-3 text-center">
-                        <h2 className="text-[30px] font-semibold">MEUS <span className="text-p5">SERVIÇOS</span></h2>
-                        <p>Minhas habilidades e serviços a oferecer</p>
+                        <h2 className="text-[30px] font-semibold">
+                            MEUS <span className="text-p5">SERVIÇOS</span>
+                        </h2>
+                        <p>
+                            Minhas habilidades e serviços a oferecer
+                        </p>
                     </div>
                     <div className="flex gap-2 flex-wrap">
                         {Cards.map(item => (

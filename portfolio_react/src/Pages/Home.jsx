@@ -1,6 +1,7 @@
 import Hero from "../Components/Hero";
 import Sobre from "../Components/Sobre";
 import Habilidades from "../Components/Habilidades";
+import Projetos from "../Components/Projetos";
 Sobre
 const Home = () => {
     return ( 
@@ -14,6 +15,9 @@ const Home = () => {
                 </section>
                 <section id="Habilidades">
                     <Habilidades/>
+                </section>
+                <section>
+                    <Projetos/>
                 </section>
             </main>
         </>
