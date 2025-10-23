@@ -6,7 +6,7 @@ const Hero = () => {
 
     return ( 
         <>
-            <section className="text-w1 max-w-[1080px] mx-auto p-3 flex justify-between max-md:flex-col my-20 min-h-[90vh]">
+            <section className="text-w1 max-w-[1080px] mx-auto p-3 flex justify-between max-md:flex-col my-20 min-h-[90vh]" id='hero'>
                 {/* Descrição Dev */}
                 <div className="max-md:m-auto md:w-6 my-auto">
                     <div className=''>

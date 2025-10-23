@@ -18,7 +18,7 @@ const Projetos = () => {
     ]
     return ( 
         <>
-            <section className="w-full text-w1 py-5">
+            <section className="w-full text-w1 py-5" id='Projetos'>
                 <div className="max-w-[1080px] m-auto p-3">
                     <div className="text-center">
                         <h1 className="text-[30px] font-semibold">PROJETOS</h1>
@@ -30,7 +30,8 @@ const Projetos = () => {
                         {arrayCards.map(item => (
                             <CardProjetos
                                 image={item.image}
-                                title={item.title}
+                       
+                                      title={item.title}
                                 text={item.text}
                             />                        
                         ))}
@@ -41,4 +42,4 @@ const Projetos = () => {
      );
 }
  
-export default Projetos;
+export default Projetos; 

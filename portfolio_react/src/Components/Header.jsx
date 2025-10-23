@@ -1,5 +1,5 @@
 import Logo from "/src/assets/Images/LogoPortfolio.png"
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { Button } from 'primereact/button';
 import { useState } from "react";
 
@@ -21,16 +21,16 @@ const Header = () => {
                     <nav className="hidden md:flex">
                         <ul className="flex justify-around w-full gap-7">
                             <li>
-                                <Link to="/" className="text-w1 hover:text-b5 duration-700">início</Link>
+                                <Link to="hero" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">início</Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Sobre</Link>
+                                <Link to="Sobre" offset={-200} smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Sobre</Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Habilidades</Link>
+                                <Link to="Habilidades" offset={-250} smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Habilidades</Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-w1 hover:text-b5 duration-700">Projetos</Link>
+                                <Link to="Projetos" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Projetos</Link>
                             </li>
                         </ul>
                     </nav>
