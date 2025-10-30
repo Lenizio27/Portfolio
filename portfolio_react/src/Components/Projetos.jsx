@@ -1,16 +1,17 @@
-import Foto from '../assets/Images/LogoPortfolio.png'
+import ProjetoToDo from '../assets/Images/ToDoList.png'
+import Vazio from '../assets/Images/vazio.png'
 import { CardProjetos } from "./Cards";
 
 
 const Projetos = () => {
     const arrayCards = [
         {
-            image:"./src/assets/Images/ToDoList.png",
+            image: ProjetoToDo,
             title:"To-Do list",
             text: "Projeto To-Do list feito com html5,Css3 e Javascript"
         },
         {
-            image:"../src/assets/Images/vazio.png",
+            image: Vazio,
             title:"projetos futuros",
             text: "Área reservada para projetos futuros"
         },
