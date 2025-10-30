@@ -5,12 +5,12 @@ import { CardProjetos } from "./Cards";
 const Projetos = () => {
     const arrayCards = [
         {
-            image:"./assets/Images/ToDoList.png",
+            image:"./src/assets/Images/ToDoList.png",
             title:"To-Do list",
             text: "Projeto To-Do list feito com html5,Css3 e Javascript"
         },
         {
-            image:"../assets/Images/vazio.png",
+            image:"../src/assets/Images/vazio.png",
             title:"projetos futuros",
             text: "Área reservada para projetos futuros"
         },
