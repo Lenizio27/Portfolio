@@ -5,13 +5,13 @@ import { CardProjetos } from "./Cards";
 const Projetos = () => {
     const arrayCards = [
         {
-            image: "../src/assets/Images/ToDoList.png",
-            title: "To-Do list",
+            image:"./assets/Images/ToDoList.png",
+            title:"To-Do list",
             text: "Projeto To-Do list feito com html5,Css3 e Javascript"
         },
         {
-            image: "../src/assets/Images/vazio.png",
-            title: "projetos futuros",
+            image:"../assets/Images/vazio.png",
+            title:"projetos futuros",
             text: "Área reservada para projetos futuros"
         },
         
@@ -30,7 +30,6 @@ const Projetos = () => {
                         {arrayCards.map(item => (
                             <CardProjetos
                                 image={item.image}
-                       
                                       title={item.title}
                                 text={item.text}
                             />                        
