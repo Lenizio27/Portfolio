@@ -36,7 +36,7 @@ const Header = () => {
                     </nav>
                     {menuOpen && (
                         <nav 
-                            className="absolute top-[80px] left-0 w-full h-[90vh] bg-[#0a0a23] flex flex-col items-center gap-6 py-6 md:hidden
+                            className="absolute top-[80px] left-0 w-full h-[92vh] bg-[#0a0a23] flex flex-col items-center gap-6 py-6 md:hidden
                             justify-content-center z-10"
                         >
                             <Link to="/" className="text-white">início</Link>

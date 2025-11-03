@@ -1,4 +1,22 @@
+import { CardSobre } from "./Cards";
 const Sobre = () => {
+    const arrayCards = [
+        {
+            title: "Desafio Drip-Store",
+            institute: "Geração Tech",
+            sobre: "Construção de uma loja digital, com "
+        },
+         {
+            title: "Desafio Back-End",
+            institute: "Geração Tech",
+            sobre: "Projeto Back-End"
+        },
+         {
+            title: "Desafio Drip-Store",
+            institute: "Geração Tech",
+            sobre: "Projeto Front-End"
+        },
+    ]
     return ( 
         <>
             <section className="text-w1 py-5 w-full">
@@ -25,21 +43,13 @@ const Sobre = () => {
                         <div className="StyleGrow ">
                             <h3 className="text-[20px] text-p5">Experiência</h3>
                             <div className="flex flex-column justify-evenly items-center w-full h-full">
-                                <div className=" bg-p1 w-full p-2 rounded-md border border-b4">
-                                    <h4>Desafio Drip-Store</h4>
-                                    <h5>Geração Tech</h5>
-                                    <p>Projeto Front-End</p>
-                                </div>
-                                <div className="xpBox bg-p1 BoxEx w-full p-2 rounded-md border border-b4">
-                                    <h4>Projeto Drip-Store</h4>
-                                    <h5>Geração Tech</h5>
-                                    <p>Projeto Front-End</p>
-                                </div>
-                                <div className="xpBox bg-p1 BoxEx w-full p-2 rounded-md border border-b4">
-                                    <h4>Projeto Drip-Store</h4>
-                                    <h5>Geração Tech</h5>
-                                    <p>Projeto Front-End</p>
-                                </div>
+                                {arrayCards.map(item => (
+                                    <CardSobre
+                                        title={item.title}
+                                        institute={item.institute}
+                                        sobre={item.sobre}
+                                    />
+                                ))}
                             </div>
                         </div>
                     </article>

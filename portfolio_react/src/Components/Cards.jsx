@@ -31,7 +31,7 @@ export const CardService = ({icon, title, text}) => {
 
 //-------- Card Meus Projetos --------
 
-export const CardProjetos = ({image, title, text}) => {
+export const CardProjetos = ({image, title, text, link}) => {
     return (
         <>
             <div 
@@ -40,10 +40,38 @@ export const CardProjetos = ({image, title, text}) => {
                 <div className="flex items-center justify-center flex-7   ">
                     <img src={image} alt="" className=" h-full shadow-2xl rounded-[20px]"/>
                 </div>
-                <div className="p-3  text-[16px] flex-6 bg-b ">
-                    <h3 className="text-b5">{title}</h3>
-                    <p>{text}</p>
+                <div className="p-3 text-[16px] flex-6 bg-b flex flex-col">
+
+                    <div>
+                        <h3 className="text-b5">{title}</h3>
+                        <p>{text}</p>
+                    </div>
+
+                    <div className="flex flex-col justify-center h-[100%] items-center ">
+                            <a 
+                            href={link}
+                            target="_blank" 
+                            className="w-full"
+                            >
+                                <button className="w-full h-10 bg-b4 rounded-md hover:bg-b2 transition active:border-1">Verificar</button>
+                            </a>
+                        
+                    </div>
                 </div>
+            </div>
+        </>
+    )
+}
+
+//-------- Card SobreMim --------
+
+export const CardSobre = ({title, institute, sobre}) => {
+    return (
+        <>
+            <div className="xpBox bg-p1 BoxEx w-full p-2 rounded-md border border-b4 grow-1 m-2 flex flex-col justify-around">
+                <h4 className="text-[20px]">{title}</h4>
+                <h5 className="text-[17px]">{institute}</h5>
+                <p className="text-[12px]">{sobre}</p>
             </div>
         </>
     )

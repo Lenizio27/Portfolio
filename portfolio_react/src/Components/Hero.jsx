@@ -2,7 +2,7 @@ import Foto from '../assets/Images/Perfil_Profissional.png'
 import {CardHero} from "./Cards";
 
 const Hero = () => {
-    const cards = ["JavaScript", "html5", "Css3", "Tailwind", "Bootstrap", "React", ]
+    const cards = ["JavaScript", "html5", "Css3", "Tailwind", "Bootstrap", "React", "Vercel", "Git", "GitHub", "Node.js"]
 
     return ( 
         <>
@@ -20,7 +20,7 @@ const Hero = () => {
                     <p className="text-[15px] mr-5">
                         Sou um desenvolvedor front-end apaixonado por tecnologias modernas, sempre buscando aprender novas ferramentas e expandir meus conhecimentos para áreas como back-end e mobile.
                     </p>
-                    <div className='py-3'>
+                    <div className='py-3 flex flex-wrap gap-y-1'>
                         {cards.map(item => (
                             <CardHero text={item}/>
                         ))}                      

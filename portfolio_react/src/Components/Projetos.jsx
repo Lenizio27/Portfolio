@@ -8,12 +8,14 @@ const Projetos = () => {
         {
             image: ProjetoToDo,
             title:"To-Do list",
-            text: "Projeto To-Do list feito com html5,Css3 e Javascript"
+            text: "Projeto To-Do list feito com html5,Css3 e Javascript",
+            link: "https://lenizio27.github.io/Projetos_FrontEnd/ToDoList/index.html"
         },
         {
             image: Vazio,
             title:"projetos futuros",
-            text: "Área reservada para projetos futuros"
+            text: "Área reservada para projetos futuros",
+            link: "/"
         },
         
     ]
@@ -31,8 +33,9 @@ const Projetos = () => {
                         {arrayCards.map(item => (
                             <CardProjetos
                                 image={item.image}
-                                      title={item.title}
+                                title={item.title}
                                 text={item.text}
+                                link={item.link}
                             />                        
                         ))}
                     </div>
