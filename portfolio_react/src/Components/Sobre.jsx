@@ -4,7 +4,7 @@ const Sobre = () => {
         {
             title: "Desafio Drip-Store",
             institute: "Geração Tech",
-            sobre: "Construção de uma loja digital, com "
+            sobre: "Construção de uma loja digital"
         },
          {
             title: "Desafio Back-End",

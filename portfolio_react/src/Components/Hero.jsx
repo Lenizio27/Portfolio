@@ -6,11 +6,13 @@ const Hero = () => {
 
     return ( 
         <>
-            <section className="text-w1 max-w-[1080px] mx-auto p-3 flex justify-between max-md:flex-col my-20 min-h-[90vh]" id='hero'>
+            <section 
+                className="text-w1 max-w-[1080px] mx-auto p-3 flex justify-between max-md:flex-col my-20 min-h-[90vh] " id='hero'
+            >
                 {/* Descrição Dev */}
                 <div className="max-md:m-auto md:w-6 my-auto">
                     <div className=''>
-                        <h1 className="text-[50px]">
+                        <h1 className="text-[50px] max-md:text-center">
                             DESENVOLVEDOR <br />FRONT-END
                         </h1>
                     </div>

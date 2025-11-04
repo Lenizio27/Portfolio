@@ -39,11 +39,20 @@ const Header = () => {
                             className="absolute top-[80px] left-0 w-full h-[92vh] bg-[#0a0a23] flex flex-col items-center gap-6 py-6 md:hidden
                             justify-content-center z-10"
                         >
-                            <Link to="/" className="text-white">início</Link>
-                            <Link to="/sobre" className="text-white">Sobre</Link>
-                            <Link to="/skills" className="text-white">Habilidades</Link>
-                            <Link to="/projetos" className="text-white">Projetos</Link>
-                             <Button label="Fale Comigo" className="bg-none text-b5 border border-b5 p-1.5 rounded-md text-[14px]"/>
+                            <ul className="flex justify-center items-center w-full gap-7 flex-col text-[20px]">
+                                <li>
+                                    <Link to="hero" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">início</Link>
+                                </li>
+                                <li>
+                                    <Link to="Sobre" offset={-200} smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Sobre</Link>
+                                </li>
+                                <li>
+                                    <Link to="Habilidades" offset={-250} smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Habilidades</Link>
+                                </li>
+                                <li>
+                                    <Link to="Projetos" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Projetos</Link>
+                                </li>
+                            </ul>
                         </nav>
                     )}
                     {/* Button */}
