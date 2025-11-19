@@ -78,3 +78,26 @@ export const CardSobre = ({title, institute, sobre}) => {
         </>
     )
 }
+
+//-------- Card FaleComigo --------
+
+export const CardFaleComigo =({open, arrayCard}) => {
+    return(
+        <>
+            <div
+                className={`
+                    absolute right-10 mt-2 w-[50px]  bg-white rounded-xl shadow-lg px-3 py-4 max-md:hidden flex-col
+                    transition-all duration-300 origin-top
+                    ${open ? "scale-100 opacity-100" : "scale-95 scale-y-0 opacity-0 pointer-events-none"}
+                    `}
+            >
+                    {arrayCard.map(item => (
+                        <a href={item.link} target="_blank">
+                            <div className={`${item.icon} text-b4 py-2 text-[20px]` }></div>
+                        </a>
+                    ))}
+                
+            </div>
+        </>
+    )
+}

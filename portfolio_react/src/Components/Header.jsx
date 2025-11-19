@@ -2,9 +2,29 @@ import Logo from "/src/assets/Images/LogoPortfolio.png"
 import { Link } from 'react-scroll';
 import { Button } from 'primereact/button';
 import { useState } from "react";
+import { CardFaleComigo } from "./Cards";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+    const arrayCards = [
+        {
+            link: "",
+            icon: "pi pi-copy"
+        },
+        {
+            link: "",
+            icon: "pi pi-whatsapp"
+        },
+        {
+            link: "",
+            icon: "pi pi-github"
+        },
+        {
+            link: "",
+            icon: "pi pi-linkedin"
+        },
+    ]
     return ( 
         <>
             <header 
@@ -60,7 +80,16 @@ const Header = () => {
                         <Button 
                             label="Fale Comigo" 
                             className="bg-none text-b5 border border-b5 p-1.5 rounded-md text-[14px] hidden md:flex hover:bg-b5 hover:text-w1"
+                            onClick={() => setOpen(!open)}
                         />
+                            {arrayCards.map(item => (
+                                <CardFaleComigo
+                                    open={open}
+                                    arrayCard={arrayCards}
+                                />
+                            ))}
+                            
+
                         <button
                         className="md:hidden text-w1 w-3"
                         onClick={() => setMenuOpen(!menuOpen)}
