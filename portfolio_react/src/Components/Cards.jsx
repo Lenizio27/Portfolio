@@ -86,14 +86,13 @@ export const CardFaleComigo =({open, arrayCard}) => {
         <>
             <div
                 className={`
-                    absolute right-10 mt-2 w-[50px]  bg-white rounded-xl shadow-lg px-3 py-4 max-md:hidden flex-col
-                    transition-all duration-300 origin-top
+                    absolute w-[50px] px-3 py-4 max-md:hidden flex-col transition-all duration-300 origin-top top-15
                     ${open ? "scale-100 opacity-100" : "scale-95 scale-y-0 opacity-0 pointer-events-none"}
                     `}
             >
                     {arrayCard.map(item => (
                         <a href={item.link} target="_blank">
-                            <div className={`${item.icon} text-b4 py-2 text-[20px]` }></div>
+                            <div className={`${item.icon} text-p4 text-[20px] py-[15px] drop-shadow-xs drop-shadow-b1` }></div>
                         </a>
                     ))}
                 

@@ -9,19 +9,19 @@ const Header = () => {
     const [open, setOpen] = useState(false);
     const arrayCards = [
         {
-            link: "",
+            link: "/src/assets/pdf/Currículo-Lenízio.pdf",
             icon: "pi pi-copy"
         },
         {
-            link: "",
+            link: "https://wa.me/5585992970669",
             icon: "pi pi-whatsapp"
         },
         {
-            link: "",
+            link: "https://github.com/Lenizio27",
             icon: "pi pi-github"
         },
         {
-            link: "",
+            link: "https://www.linkedin.com/in/lenizio-nascimento-805534296/",
             icon: "pi pi-linkedin"
         },
     ]
@@ -73,22 +73,30 @@ const Header = () => {
                                     <Link to="Projetos" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Projetos</Link>
                                 </li>
                             </ul>
+                            <div className="text-center">
+                                <div className="flex">
+                                    {arrayCards.map(item => (
+                                        <a href="">
+                                            <div className={`${item.icon} text-b5 px-3 text-2xl`}></div>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
                         </nav>
                     )}
                     {/* Button */}
                     <div>
-                        <Button 
-                            label="Fale Comigo" 
-                            className="bg-none text-b5 border border-b5 p-1.5 rounded-md text-[14px] hidden md:flex hover:bg-b5 hover:text-w1"
-                            onClick={() => setOpen(!open)}
-                        />
-                            {arrayCards.map(item => (
-                                <CardFaleComigo
-                                    open={open}
-                                    arrayCard={arrayCards}
-                                />
-                            ))}
-                            
+                        <div className="flex flex-col items-center ">
+                            <Button
+                                label="Fale Comigo"
+                                className="z-10 bg-none text-b5 border border-b5 p-1.5 rounded-md text-[14px] hidden md:flex hover:bg-b5 hover:text-w1"
+                                onClick={() => setOpen(!open)}
+                            />
+                            <CardFaleComigo
+                                open={open}
+                                arrayCard={arrayCards}
+                            />
+                        </div>
 
                         <button
                         className="md:hidden text-w1 w-3"
