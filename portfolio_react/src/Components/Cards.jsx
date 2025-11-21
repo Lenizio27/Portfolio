@@ -92,7 +92,7 @@ export const CardFaleComigo =({open, arrayCard}) => {
             >
                     {arrayCard.map(item => (
                         <a href={item.link} target="_blank">
-                            <div className={`${item.icon} text-p4 text-[20px] py-[15px] drop-shadow-xs drop-shadow-b1` }></div>
+                            <div className={`${item.icon} text-w1 text-[20px] py-[15px] drop-shadow-xs drop-shadow-b1 hover:drop-shadow-b5` }></div>
                         </a>
                     ))}
                 

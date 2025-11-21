@@ -24,6 +24,10 @@ const Header = () => {
             link: "https://www.linkedin.com/in/lenizio-nascimento-805534296/",
             icon: "pi pi-linkedin"
         },
+        {
+            link: "mailto:lenizio27@gmail.com",
+            icon: "pi pi-envelope"
+        },
     ]
     return ( 
         <>
