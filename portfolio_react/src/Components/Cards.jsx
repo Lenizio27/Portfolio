@@ -33,22 +33,21 @@ export const CardService = ({icon, title, text}) => {
 
 //-------- Card Meus Projetos --------
 
-export const CardProjetos = ({image, title, text, link}) => {
+export const CardProjetos = ({image, title, text, link, tecnologias}) => {
     return (
         <>
             <div 
             className="h-[250px] relative rounded-[20px] flex border  basis-[350px] grow-1" 
              >
-                <div className="flex items-center justify-center flex-7   ">
+                <div className="flex items-center justify-center flex-6   max-md:flex-4">
                     <img src={image} alt="" className=" h-full shadow-2xl rounded-[20px]"/>
                 </div>
-                <div className="p-3 text-[16px] flex-6 bg-b flex flex-col">
-
+                <div className="p-3 text-[16px] flex-6 bg-b flex flex-col justify-between h-full">
                     <div>
                         <h3 className="text-b5">{title}</h3>
-                        <p>{text}</p>
+                        <p><strong>SOBRE</strong>: {text}</p>
+                        <p><strong>TECNOLOGIAS</strong>: {tecnologias}</p>
                     </div>
-
                     <div className="flex flex-col justify-center h-[100%] items-center ">
                             <a 
                             href={link}

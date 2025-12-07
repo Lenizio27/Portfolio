@@ -1,4 +1,4 @@
-import ProjetoToDo from '../assets/Images/ToDoList.png'
+import ProjetoDripStore from '../assets/Images/drip_store.png'
 import Vazio from '../assets/Images/vazio.png'
 import { CardProjetos } from "./Cards";
 
@@ -6,10 +6,11 @@ import { CardProjetos } from "./Cards";
 const Projetos = () => {
     const arrayCards = [
         {
-            image: ProjetoToDo,
-            title:"To-Do list",
-            text: "Projeto To-Do list feito com html5,Css3 e Javascript",
-            link: "https://lenizio27.github.io/Projetos_FrontEnd/ToDoList/index.html"
+            image: ProjetoDripStore,
+            title:"drip_store",
+            text: "loja digital, aplicação de conhecimentos do curso full-stack.",
+            tecnologias: "react-vite, tailwind, js,",
+            link: "https://dripstore-lenizio.vercel.app/"
         },
         {
             image: Vazio,
@@ -35,6 +36,7 @@ const Projetos = () => {
                                 image={item.image}
                                 title={item.title}
                                 text={item.text}
+                                tecnologias={item.tecnologias}
                                 link={item.link}
                             />                        
                         ))}

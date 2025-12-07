@@ -9,7 +9,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
     const arrayCards = [
         {
-            link: "/src/assets/pdf/Currículo-Lenízio.pdf",
+            link: "/src/assets/pdf/curriculo_lenizio_2.0.pdf",
             icon: "pi pi-copy"
         },
         {

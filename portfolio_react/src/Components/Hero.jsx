@@ -2,7 +2,7 @@ import Foto from '../assets/Images/Perfil_Profissional.png'
 import {CardHero} from "./Cards";
 
 const Hero = () => {
-    const cards = ["JavaScript", "html5", "Css3", "Tailwind", "Bootstrap", "React", "Vercel", "Git", "GitHub", "Node.js"]
+    const cards = ["html5", "Css3", "JavaScript", "Tailwind", "Bootstrap", "React", "Vercel", "Git", "GitHub", "Node.js"]
 
     return ( 
         <>

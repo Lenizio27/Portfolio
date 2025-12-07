@@ -27,9 +27,9 @@ const Sobre = () => {
                     </div>
                     <article className="flex max-md:flex-col py-3 gap-3">
                         {/* Jornada */}
-                        <div className="StyleGrow  md-flex">
+                        <div className=" md-flex flex-6 my-1">
                             <h3 className="text-[20px] text-p5">Minha Jornada</h3>
-                            <p>
+                            <p className="">
                                 Olá! Sou Lenizio Nascimento (LNZ), um desenvolvedor frontend dedicado e curioso por tecnologia. Iniciei minha trajetória na programação há alguns mêses, venho me aprimorando continuamente, sempre em busca de evoluir minhas habilidades e entregar soluções de qualidade.
                                 <br />
                                 <br />
@@ -40,7 +40,7 @@ const Sobre = () => {
                             </p>
                         </div>
                         {/* Experiências */}
-                        <div className="StyleGrow ">
+                        <div className=" flex-6">
                             <h3 className="text-[20px] text-p5">Experiência</h3>
                             <div className="flex flex-column justify-evenly items-center w-full h-full">
                                 {arrayCards.map(item => (
