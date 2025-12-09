@@ -5,8 +5,22 @@ import { useState } from "react";
 import { CardFaleComigo } from "./Cards";
 
 const Header = () => {
+    const [classe, setClasse] = useState("");
     const [menuOpen, setMenuOpen] = useState(false)
     const [open, setOpen] = useState(false);
+
+    function aplicarClasseDepois() {
+        if(menuOpen === false){
+            setTimeout(() => {
+                setClasse("flex");
+            }, 100)
+        }else if(menuOpen === true){
+            setTimeout(() => {
+                setClasse("hidden");
+            }, 100)
+        }
+    }
+
     const arrayCards = [
         {
             link: "/src/assets/pdf/curriculo_lenizio_2.0.pdf",
@@ -35,7 +49,7 @@ const Header = () => {
             className="border-b border-b1 m-auto fixed flex w-full z-20 bg-b6 top-0"
             >
                 <div 
-                className="flex align-items-center justify-between h-[80px] max-w-[1080px] m-auto max-md:justify-between max-md:px-7 px-3 w-full"
+                className="flex align-items-center justify-between h-[80px] max-w-[1440px] mx-auto max-md:justify-between max-md:px-7 px-3 w-full"
                 >
                     {/*Logo*/}
                     <div>
@@ -58,36 +72,35 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
-                    {menuOpen && (
-                        <nav 
-                            className="absolute top-[80px] left-0 w-full h-[92vh] bg-[#0a0a23] flex flex-col items-center gap-6 py-6 md:hidden
-                            justify-content-center z-10"
-                        >
-                            <ul className="flex justify-center items-center w-full gap-7 flex-col text-[20px]">
-                                <li>
-                                    <Link to="hero" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">início</Link>
-                                </li>
-                                <li>
-                                    <Link to="Sobre" offset={-200} smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Sobre</Link>
-                                </li>
-                                <li>
-                                    <Link to="Habilidades" offset={-250} smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Habilidades</Link>
-                                </li>
-                                <li>
-                                    <Link to="Projetos" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Projetos</Link>
-                                </li>
-                            </ul>
-                            <div className="text-center">
-                                <div className="flex">
-                                    {arrayCards.map(item => (
-                                        <a href="">
-                                            <div className={`${item.icon} text-b5 px-3 text-2xl`}></div>
-                                        </a>
-                                    ))}
-                                </div>
+                    {/* Navegacao Mobile */}
+                    <nav 
+                        className={`${aplicarClasseDepois()} absolute top-[60px] left-0 w-full h-[calc(100dvh-40px)] bg-[#0a0a23]  flex-col items-center gap-6 py-6 md:hidden justify-content-center transition-all ${menuOpen ? `scale-y-95 opacity-0 `: ` scale-y-95 opacity-100`}  ${classe}`}
+                    >
+                        <ul className="flex justify-center items-center w-full gap-7 flex-col text-[20px]">
+                            <li>
+                                <Link to="hero" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer ">início</Link>
+                            </li>
+                            <li>
+                                <Link to="Sobre" offset={-200} smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Sobre</Link>
+                            </li>
+                            <li>
+                                <Link to="Habilidades" offset={-250} smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Habilidades</Link>
+                            </li>
+                            <li>
+                                <Link to="Projetos" smooth={true} className="text-w1 hover:text-b5 duration-700 cursor-pointer">Projetos</Link>
+                            </li>
+                        </ul>
+                        <div className="text-center">
+                            <div className="flex">
+                                {arrayCards.map(item => (
+                                    <a href="">
+                                        <div className={`${item.icon} text-b5 px-3 text-2xl`}></div>
+                                    </a>
+                                ))}
                             </div>
-                        </nav>
-                    )}
+                        </div>
+                    </nav>
+                    
                     {/* Button */}
                     <div>
                         <div className="flex flex-col items-center ">

@@ -31,7 +31,7 @@ const Habilidades = () => {
     return ( 
         <>
             <section className="text-w1 w-full bg-b1">
-                <div className="max-w-[1080px] m-auto p-3">
+                <div className="max-w-[1440px] m-auto p-3">
                     <div className=" m-auto p-3 text-center">
                         <h2 className="text-[30px] font-semibold">
                             MEUS <span className="text-p5">SERVIÇOS</span>

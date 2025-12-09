@@ -23,7 +23,7 @@ const Projetos = () => {
     return ( 
         <>
             <section className="w-full text-w1 py-5" id='Projetos'>
-                <div className="max-w-[1080px] m-auto p-3">
+                <div className="max-w-[1440px] m-auto p-3">
                     <div className="text-center">
                         <h1 className="text-[30px] font-semibold">PROJETOS</h1>
                         <p>
