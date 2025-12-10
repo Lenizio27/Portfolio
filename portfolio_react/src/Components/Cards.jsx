@@ -37,10 +37,10 @@ export const CardProjetos = ({image, title, text, link, tecnologias}) => {
     return (
         <>
             <div 
-            className="h-[250px] relative rounded-[20px] flex border  basis-[350px] grow-1" 
+            className="flex flex-col relative rounded-[20px] border h-[350px] grow-1 max-w-[400px] hover:-translate-y-1 transition-all" 
              >
-                <div className="flex items-center justify-center flex-6   max-md:flex-4">
-                    <img src={image} alt="" className=" h-full shadow-2xl rounded-[20px]"/>
+                <div className="flex items-center justify-center flex-6  max-md:flex-6 h-[150px] ">
+                    <img src={image} alt="" className=" w h-[100%] shadow-2xl w-[300px]"/>
                 </div>
                 <div className="p-3 text-[16px] flex-6 bg-b flex flex-col justify-between h-full">
                     <div>
