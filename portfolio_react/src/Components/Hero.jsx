@@ -12,7 +12,7 @@ const Hero = () => {
                 {/* Descrição Dev */}
                 <div className="max-md:m-auto md:w-6 my-auto">
                     <div className=''>
-                        <h1 className="text-[50px] max-md:text-center">
+                        <h1 className="text-[50px] max-md:text-center max-sm:text-[40px]">
                             DESENVOLVEDOR <br />FRONT-END
                         </h1>
                     </div>

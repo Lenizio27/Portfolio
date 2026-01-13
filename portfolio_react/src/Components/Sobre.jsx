@@ -40,18 +40,6 @@ const Sobre = () => {
                             </p>
                         </div>
                         {/* Experiências */}
-                        <div className=" flex-6">
-                            <h3 className="text-[20px] text-p5">Experiência</h3>
-                            <div className="flex flex-column justify-evenly items-center w-full h-full">
-                                {arrayCards.map(item => (
-                                    <CardSobre
-                                        title={item.title}
-                                        institute={item.institute}
-                                        sobre={item.sobre}
-                                    />
-                                ))}
-                            </div>
-                        </div>
                     </article>
                 </div>
             </section>

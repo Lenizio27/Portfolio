@@ -16,7 +16,7 @@ export const CardService = ({icon, title, text}) => {
     return ( 
         <>
             <div 
-                className="bg-b3 h-[100px] flex flex-col items-center justify-center basis-[400px] grow-1 rounded-md border-1 hover:text-b5 hover:bg-w1 transition-[1s] text-center"
+                className="bg-b3 h-[100px] flex flex-col items-center justify-center basis-[400px] grow-1 rounded-md border-1 hover:text-b5 hover:bg-w1 transition-[1s] text-center p-3 gap-2"
             >
                 <div class={icon}></div>
                 <h2>

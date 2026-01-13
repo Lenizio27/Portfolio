@@ -6,7 +6,7 @@ import { CardFaleComigo } from "./Cards";
 
 const Header = () => {
     const [classe, setClasse] = useState("");
-    const [menuOpen, setMenuOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(true)
     const [open, setOpen] = useState(false);
 
     function aplicarClasseDepois() {
@@ -17,7 +17,7 @@ const Header = () => {
         }else if(menuOpen === true){
             setTimeout(() => {
                 setClasse("hidden");
-            }, 100)
+            }, 200)
         }
     }
 
@@ -120,7 +120,7 @@ const Header = () => {
                         onClick={() => setMenuOpen(!menuOpen)}
                         >
                             <i 
-                            className={menuOpen ? "pi pi-times" : "pi pi-bars"
+                            className={menuOpen ? "pi pi-bars" : "pi pi-times"
                             }>
                             </i>
                         </button>

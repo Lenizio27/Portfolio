@@ -1,4 +1,5 @@
 import ProjetoDripStore from '../assets/Images/drip_store.png'
+import ProjetoCheckList from '../assets/Images/check_list.png'
 import Vazio from '../assets/Images/vazio.png'
 import { CardProjetos } from "./Cards";
 
@@ -9,14 +10,15 @@ const Projetos = () => {
             image: ProjetoDripStore,
             title:"drip_store",
             text: "loja digital, aplicação de conhecimentos do curso full-stack.",
-            tecnologias: "react-vite, tailwind, js,",
+            tecnologias: "react-vite, tailwind, js, Api Rest",
             link: "https://dripstore-lenizio.vercel.app/"
         },
         {
-            image: Vazio,
-            title:"projetos futuros",
+            image: ProjetoCheckList,
+            title:"check_list",
             text: "Área reservada para projetos futuros",
-            link: "/"
+            tecnologias: "Html, Css, JavaScript",
+            link: "https://lenizio27.github.io/projetos/check_list/index.html"
         },
         
     ]
