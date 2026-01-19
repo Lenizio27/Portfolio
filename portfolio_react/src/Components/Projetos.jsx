@@ -16,16 +16,16 @@ const Projetos = () => {
         {
             image: ProjetoCheckList,
             title:"check_list",
-            text: "Área reservada para projetos futuros",
+            text: "check_list com timer e organição de tempo.",
             tecnologias: ["Html", "Css", "JavaScript"],
             link: "https://lenizio27.github.io/projetos/check_list/index.html"
         },
         {
             image: Vazio,
-            title:"check_list",
+            title:"vazio",
             text: "Área reservada para projetos futuros",
-            tecnologias: ["Html", "Css", "JavaScript"],
-            link: "https://lenizio27.github.io/projetos/check_list/index.html"
+            tecnologias: ["em breve novas tecnologias"],
+            link: "/"
         },
         
     ]
