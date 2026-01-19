@@ -10,14 +10,21 @@ const Projetos = () => {
             image: ProjetoDripStore,
             title:"drip_store",
             text: "loja digital, aplicação de conhecimentos do curso full-stack.",
-            tecnologias: "react-vite, tailwind, js, Api Rest",
+            tecnologias: ["react", "tailwind", "js", "html", "css"],
             link: "https://dripstore-lenizio.vercel.app/"
         },
         {
             image: ProjetoCheckList,
             title:"check_list",
             text: "Área reservada para projetos futuros",
-            tecnologias: "Html, Css, JavaScript",
+            tecnologias: ["Html", "Css", "JavaScript"],
+            link: "https://lenizio27.github.io/projetos/check_list/index.html"
+        },
+        {
+            image: Vazio,
+            title:"check_list",
+            text: "Área reservada para projetos futuros",
+            tecnologias: ["Html", "Css", "JavaScript"],
             link: "https://lenizio27.github.io/projetos/check_list/index.html"
         },
         
@@ -32,7 +39,7 @@ const Projetos = () => {
                             Uma seleção dos meus trabalhos mais recentes e projetos que demonstram minhas habilidades e experiência.
                         </p>
                     </div>
-                    <div className='pt-3 flex flex-wrap gap-2'>
+                    <div className='pt-3 flex flex-wrap gap-2 justify-around'>
                         {arrayCards.map(item => (
                             <CardProjetos
                                 image={item.image}

@@ -46,7 +46,11 @@ export const CardProjetos = ({image, title, text, link, tecnologias}) => {
                     <div>
                         <h3 className="text-b5">{title}</h3>
                         <p><strong>SOBRE</strong>: {text}</p>
-                        <p><strong>TECNOLOGIAS</strong>: {tecnologias}</p>
+                        
+                            {tecnologias.map((item) => (
+                                <CardHero text={item}></CardHero>
+                            ))} 
+                        {}
                     </div>
                     <div className="flex flex-col justify-center h-[100%] items-center ">
                             <a 
@@ -56,7 +60,6 @@ export const CardProjetos = ({image, title, text, link, tecnologias}) => {
                             >
                                 <button className="w-full h-10 bg-b4 rounded-md hover:bg-b2 transition active:border-1">Verificar</button>
                             </a>
-                        
                     </div>
                 </div>
             </div>

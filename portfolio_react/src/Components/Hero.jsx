@@ -3,7 +3,7 @@ import {CardHero} from "./Cards";
 
 const Hero = () => {
     const cards = ["html5", "Css3", "JavaScript", "Tailwind", "Bootstrap", "React", "Vercel", "Git", "GitHub", "Node.js"]
-
+    
     return ( 
         <>
             <section 
@@ -13,7 +13,7 @@ const Hero = () => {
                 <div className="max-md:m-auto md:w-6 my-auto">
                     <div className=''>
                         <h1 className="text-[50px] max-md:text-center max-sm:text-[40px]">
-                            DESENVOLVEDOR <br />FRONT-END
+                            DESENVOLVEDOR <br /><span id='titleHero'>FRONT-END</span>
                         </h1>
                     </div>
                     <h2 className="text-[20px] py-1">
