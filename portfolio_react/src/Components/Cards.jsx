@@ -10,7 +10,7 @@ export const CardHero = ({text}) => {
     )
 }
 
-//-------- Card Meus Servicos --------
+//-------- Card Contatos --------
 
 export const CardService = ({icon, title, text}) => {
     return ( 
@@ -18,7 +18,7 @@ export const CardService = ({icon, title, text}) => {
             <div 
                 className="bg-b3 h-[100px] flex flex-col items-center justify-center basis-[400px] grow-1 rounded-md border-1 hover:text-b5 hover:bg-w1 transition-[1s] text-center p-3 gap-2"
             >
-                <div class={icon}></div>
+                <div class={`${icon}`}></div>
                 <h2>
                     {title}
                 </h2>
@@ -69,13 +69,15 @@ export const CardProjetos = ({image, title, text, link, tecnologias}) => {
 
 //-------- Card SobreMim --------
 
-export const CardSobre = ({title, institute, sobre}) => {
+export const CardContato = ({icon, title, doc}) => {
     return (
         <>
-            <div className="xpBox bg-p1 BoxEx w-full p-2 rounded-md border border-b4 grow-1 m-2 flex flex-col justify-around">
-                <h4 className="text-[20px]">{title}</h4>
-                <h5 className="text-[17px]">{institute}</h5>
-                <p className="text-[12px]">{sobre}</p>
+            <div className="xpBox bg-b2 BoxEx w-full p-2 rounded-md border border-b4 flex items-center">
+                <h4 className={`${icon}`}></h4>
+                <div className="px-3">
+                    <h5 className="text-[17px]">{title}</h5>
+                    <p className="text-[12px]">{doc}</p>
+                </div>
             </div>
         </>
     )

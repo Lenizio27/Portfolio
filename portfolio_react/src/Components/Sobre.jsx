@@ -1,4 +1,4 @@
-import { CardSobre } from "./Cards";
+
 const Sobre = () => {
     const arrayCards = [
         {
