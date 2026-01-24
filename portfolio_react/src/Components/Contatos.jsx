@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { CardContato } from "./Cards";
 
 const Contatos = () => {
@@ -19,28 +20,7 @@ const Contatos = () => {
         },
     ]
 
-    const [formData, setFormData] = useState({
-        nome: '',
-        email: '',
-        assunto: '',
-        mensagem: ''
-    });   
-
-    // 3. Função de envio
-    const sendEmail = (e) => {
-    e.preventDefault();
-
-    // Aqui você usaria o ID do serviço, template e chave pública do EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_PUBLIC_KEY')
-        .then((response) => {
-            alert('Mensagem enviada com sucesso!');
-            setFormData({ nome: '', email: '', assunto: '', mensagem: '' }); // Limpa o form
-        }, (err) => {
-            console.error('Erro ao enviar:', err);
-            alert('Ocorreu um erro ao enviar a mensagem.');
-        });
-    };
-
+    
     return ( 
         <>
             <section className="text-white">
@@ -56,17 +36,12 @@ const Contatos = () => {
                             <h2 className="text-[20px] text-p5 pb-2">Envie uma Mensagem</h2>
                             <form 
                             className="flex gap-2 w-full flex-wrap" 
-                            onSubmit={sendEmail}
                             >
                                 <label className="flex flex-col flex-1">Nome
                                     <input
-                                    name="nome"
-                                    value={formData.nome}
-                                    onChange={handleChange}
                                     type="text" 
                                     className="bg-b3 rounded-sm px-2" 
                                     placeholder="Seu nome completo"
-                                    required
                                     />
                                 </label>
                                 <label className="flex flex-col flex-1">Email
