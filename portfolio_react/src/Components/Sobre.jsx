@@ -1,3 +1,5 @@
+import {motion} from 'framer-motion'
+
 
 const Sobre = () => {
     const arrayCards = [
@@ -19,7 +21,13 @@ const Sobre = () => {
     ]
     return ( 
         <>
-            <section className="text-w1 py-5 w-full">
+            <motion.section 
+                className="text-w1 py-5 w-full"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }} 
+                viewport={{ once: true }}
+                >
                 <div className="max-w-[1440px] m-auto p-3">
                     <div className=" flex flex-col align-items-center justify-center">
                         <h2 className="text-[30px] font-semibold">SOBRE <span className="text-p5">MIM</span></h2>
@@ -42,7 +50,7 @@ const Sobre = () => {
                         {/* Experiências */}
                     </article>
                 </div>
-            </section>
+            </motion.section>
         </>
      );
 }

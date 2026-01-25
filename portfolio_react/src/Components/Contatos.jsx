@@ -101,7 +101,7 @@ const Contatos = () => {
                                 </div>
                              <button 
                              type="submit"
-                             className="w-full h-10 bg-b4 rounded-md hover:bg-b2 transition active:border-1 my-2">Verificar</button>
+                             className="w-full h-10 bg-b4 rounded-md hover:bg-b2 transition active:border-1 my-2">Enviar</button>
                             </form>
                         </section>
                         <section className="flex flex-col p-3 rounded-sm gap-2 flex-1">

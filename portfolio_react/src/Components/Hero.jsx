@@ -1,4 +1,5 @@
 import Foto from '../assets/Images/Perfil_Profissional.png'
+import { motion } from 'framer-motion'
 import {CardHero} from "./Cards";
 
 const Hero = () => {
@@ -6,7 +7,11 @@ const Hero = () => {
     
     return ( 
         <>
-            <section 
+            <motion.section 
+                initial={{ opacity: 0, y: 50 }} // Começa invisível e 50px abaixo
+                whileInView={{ opacity: 1, y: 0 }} // Quando entra na tela, fica visível e sobe
+                transition={{ duration: 0.6 }} // Duração da animação
+                viewport={{ once: true }} // Anima apenas uma vez ao rolar
                 className="text-w1 max-w-[1440px] mx-auto p-3 flex justify-between max-md:flex-col my-20 min-h-[90vh] " id='hero'
             >
                 {/* Descrição Dev */}
@@ -35,7 +40,7 @@ const Hero = () => {
                     alt="foto-perfil" 
                     className='imgLogo w-[70%]'/>
                 </div>
-            </section>
+            </motion.section>
         </>
      );
 }
