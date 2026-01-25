@@ -51,10 +51,10 @@ const Contatos = () => {
                     </div>
                     <div className="w-full flex flex-wrap flex-col lg:flex-row">
                         <motion.section 
-                        initial={{ opacity: 0, x: -15,}} // Começa invisível e 50px abaixo
-                        whileInView={{ opacity: 1, x: 0 }} // Quando entra na tela, fica visível e sobe
-                        transition={{ duration: .3 }} // Duração da animação
-                        viewport={{ once: false, amount: 0.3 }} // Anima apenas uma vez ao rolar
+                            initial={{ opacity: 0, x: -15,}} // Começa invisível e 50px abaixo
+                            whileInView={{ opacity: 1, x: 0 }} // Quando entra na tela, fica visível e sobe
+                            transition={{ duration: .3 }} // Duração da animação
+                            viewport={{ once: false, amount: 0.3 }} // Anima apenas uma vez ao rolar
                             className="flex flex-col p-3 bg-b1 rounded-sm flex-1"
                             >
                             <h2 className="text-[20px] text-p5 pb-2">Envie uma Mensagem</h2>
@@ -62,7 +62,7 @@ const Contatos = () => {
                             className="flex flex-col gap-2 w-full flex-wrap" 
                             ref={form} onSubmit={sendEmail}
                             >
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 flex-wrap">
                                     <label className="flex flex-col flex-1">Nome
                                         <input
                                         type="text"
