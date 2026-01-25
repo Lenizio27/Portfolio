@@ -28,6 +28,7 @@ const Habilidades = () => {
             text: "Versionamento com git e github"
         }
     ];
+
     return ( 
         <>
             <section className="text-w1 w-full bg-b1">
@@ -41,11 +42,13 @@ const Habilidades = () => {
                         </p>
                     </div>
                     <div className="flex gap-2 flex-wrap">
-                        {Cards.map(item => (
-                            <CardService
+                        {
+                            Cards.map(item => (
+                                <CardService
                                 icon={item.icon}
                                 title={item.title}
                                 text={item.text}
+                                transition={Cards.indexOf(item)}
                             />
                         ))}
                     </div>

@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+
+
 //-------- Card Tecnologias Hero --------
 
 export const CardHero = ({text}) => {
@@ -10,12 +13,16 @@ export const CardHero = ({text}) => {
     )
 }
 
-//-------- Card Contatos --------
+//-------- Card Servicos --------
 
-export const CardService = ({icon, title, text}) => {
+export const CardService = ({icon, title, text, transition}) => {
     return ( 
         <>
-            <div 
+            <motion.div 
+                initial={{ opacity: 0, x: 15,}} // Começa invisível e 50px abaixo
+                whileInView={{ opacity: 1, x: 0 }} // Quando entra na tela, fica visível e sobe
+                transition={{ duration: transition/15 }} // Duração da animação
+                viewport={{ once: false, amount: 0.3 }} // Anima apenas uma vez ao rolar
                 className="bg-b3 h-[100px] flex flex-col items-center justify-center basis-[400px] grow-1 rounded-md border-1 hover:text-b5 hover:bg-w1 transition-[1s] text-center p-3 gap-2 "
             >
                 <div className={`${icon}`}></div>
@@ -24,8 +31,9 @@ export const CardService = ({icon, title, text}) => {
                 </h2>
                 <p>
                     {text}
+                    {transition}
                 </p>
-            </div>
+            </motion.div>
         </>
      );
 }
@@ -33,11 +41,15 @@ export const CardService = ({icon, title, text}) => {
 
 //-------- Card Meus Projetos --------
 
-export const CardProjetos = ({image, title, text, link, tecnologias}) => {
+export const CardProjetos = ({image, title, text, link, tecnologias, transition}) => {
     return (
         <>
-            <div 
-            className="flex flex-col relative rounded-[20px] border h-[350px] w-[430px] hover:-translate-y-1 transition-all max-lg:w-full" 
+            <motion.div 
+                initial={{ opacity: 0, y: 50,}} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ duration: transition/10 }} 
+                viewport={{ once: false, amount: 0.3 }} 
+                className="flex flex-col relative rounded-[20px] border h-[350px] w-[430px] hover:-translate-y-1 transition-all max-lg:w-full" 
              >
                 <div className="flex items-center justify-center flex-6  max-md:flex-6 h-[150px] ">
                     <img src={image} alt="" className=" w h-[100%] shadow-2xl w-[300px]"/>
@@ -62,23 +74,28 @@ export const CardProjetos = ({image, title, text, link, tecnologias}) => {
                             </a>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
 
 //-------- Card Contato --------
 
-export const CardContato = ({icon, title, doc}) => {
+export const CardContato = ({icon, title, doc, transition}) => {
     return (
         <>
-            <div className="xpBox bg-b2 BoxEx w-full p-2 rounded-md border border-b4 flex items-center flex-1">
+            <motion.div 
+            initial={{ opacity: 0, x: 15,}} 
+            whileInView={{ opacity: 1, x: 0 }} 
+            transition={{ duration: transition/5 }} 
+            viewport={{ once: false, amount: 0.3 }} 
+            className="xpBox bg-b2 BoxEx w-full p-2 rounded-md border border-b4 flex items-center flex-1">
                 <h4 className={`${icon}`}></h4>
                 <div className="px-3">
                     <h5 className="text-[17px]">{title}</h5>
                     <p className="text-[12px]">{doc}</p>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

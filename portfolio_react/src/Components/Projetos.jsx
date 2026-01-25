@@ -47,6 +47,7 @@ const Projetos = () => {
                                 text={item.text}
                                 tecnologias={item.tecnologias}
                                 link={item.link}
+                                transition={arrayCards.indexOf(item)}
                             />                        
                         ))}
                     </div>

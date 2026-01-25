@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { CardContato } from "./Cards";
 import emailjs from '@emailjs/browser'
+import { motion } from "framer-motion";
 
 const Contatos = () => {
     const cardContatos = [
@@ -49,7 +50,13 @@ const Contatos = () => {
                         </p>
                     </div>
                     <div className="w-full flex flex-wrap flex-col lg:flex-row">
-                        <section className="flex flex-col p-3 bg-b1 rounded-sm flex-1">
+                        <motion.section 
+                        initial={{ opacity: 0, x: -15,}} // Começa invisível e 50px abaixo
+                        whileInView={{ opacity: 1, x: 0 }} // Quando entra na tela, fica visível e sobe
+                        transition={{ duration: .3 }} // Duração da animação
+                        viewport={{ once: false, amount: 0.3 }} // Anima apenas uma vez ao rolar
+                            className="flex flex-col p-3 bg-b1 rounded-sm flex-1"
+                            >
                             <h2 className="text-[20px] text-p5 pb-2">Envie uma Mensagem</h2>
                             <form 
                             className="flex flex-col gap-2 w-full flex-wrap" 
@@ -103,7 +110,7 @@ const Contatos = () => {
                              type="submit"
                              className="w-full h-10 bg-b4 rounded-md hover:bg-b2 transition active:border-1 my-2">Enviar</button>
                             </form>
-                        </section>
+                        </motion.section>
                         <section className="flex flex-col p-3 rounded-sm gap-2 flex-1">
                             {
                                 cardContatos.map(item => (
@@ -111,6 +118,7 @@ const Contatos = () => {
                                         icon={item.icon}
                                         title={item.title}
                                         doc={item.doc}
+                                        transition={cardContatos.indexOf(item)}
                                     >
                                     </CardContato>
                                 ))
