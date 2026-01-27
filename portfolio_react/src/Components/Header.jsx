@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { Button } from 'primereact/button';
 import { useState } from "react";
 import { CardFaleComigo } from "./Cards";
+import Curriculo from '/src/assets/pdf/curriculo_lenizio_2.0.pdf'
 
 const Header = () => {
     const [classe, setClasse] = useState("");
@@ -23,7 +24,7 @@ const Header = () => {
 
     const arrayCards = [
         {
-            link: "/src/assets/pdf/curriculo_lenizio_2.0.pdf",
+            link: Curriculo,
             icon: "pi pi-copy"
         },
         {

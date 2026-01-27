@@ -12,7 +12,7 @@ const Hero = () => {
             >
                 {/* Descrição Dev */}
                 <motion.div 
-                    initial={{ opacity: 0, x: -50, y:-10 }} // Começa invisível e 50px abaixo
+                    initial={{ opacity: 0, x: -15, y:-10 }} // Começa invisível e 50px abaixo
                     whileInView={{ opacity: 1, x: 0, y:0 }} // Quando entra na tela, fica visível e sobe
                     transition={{ duration: 0.6 }} // Duração da animação
                     viewport={{ once: false, amount: 0.3 }} // Anima apenas uma vez ao rolar
@@ -36,7 +36,7 @@ const Hero = () => {
                 </motion.div>
                 {/* Foto Perfil */}
                 <motion.div 
-                initial={{ opacity: 0, x: 50, y:-10 }} // Começa invisível e 50px abaixo
+                initial={{ opacity: 0, x: 15, y:-10 }} // Começa invisível e 50px abaixo
                 whileInView={{ opacity: 1, x: 0, y:0 }} // Quando entra na tela, fica visível e sobe
                 transition={{ duration: 0.6 }} // Duração da animação
                 viewport={{ once: false, amount: 0.3 }} // Anima apenas uma vez ao rolar
