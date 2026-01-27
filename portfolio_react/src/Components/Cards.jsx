@@ -21,7 +21,7 @@ export const CardService = ({icon, title, text, transition}) => {
             <motion.div 
                 initial={{ opacity: 0, x: 15,}} // Começa invisível e 50px abaixo
                 whileInView={{ opacity: 1, x: 0 }} // Quando entra na tela, fica visível e sobe
-                transition={{ duration: transition/15 }} // Duração da animação
+                transition={{ duration: transition/10 }} // Duração da animação
                 viewport={{ once: false, amount: 0.3 }} // Anima apenas uma vez ao rolar
                 className="bg-b3 h-[100px] flex flex-col items-center justify-center basis-[400px] grow-1 rounded-md border-1 hover:text-b5 hover:bg-w1 transition-[1s] text-center p-3 gap-2 "
             >
@@ -45,9 +45,9 @@ export const CardProjetos = ({image, title, text, link, tecnologias, transition}
     return (
         <>
             <motion.div 
-                initial={{ opacity: 0, y: 50,}} 
+                initial={{ opacity: 0, y: 5,}} 
                 whileInView={{ opacity: 1, y: 0 }} 
-                transition={{ duration: transition/10 }} 
+                transition={{ duration: transition/5 }} 
                 viewport={{ once: false, amount: 0.3 }} 
                 className="flex flex-col relative rounded-[20px] border h-[350px] w-[430px] hover:-translate-y-1 transition-all max-lg:w-full" 
              >

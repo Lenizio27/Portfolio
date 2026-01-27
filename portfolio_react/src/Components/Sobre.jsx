@@ -23,7 +23,10 @@ const Sobre = () => {
         <>
             <motion.section 
                 className="text-w1 py-5 w-full"
-                initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: false, amount: 0.3 }}
+                initial={{ opacity: 0, y: 10 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 0.6 }} 
+                viewport={{ once: false, amount: 0.3 }}
                 >
                 <div className="max-w-[1440px] m-auto p-3">
                     <div className=" flex flex-col align-items-center justify-center">
